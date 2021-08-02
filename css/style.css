@@ -16,11 +16,19 @@ a li {
 }
 
 .ls-list {
-    margin-bottom: 30px;
+    margin-bottom: 150px;
 }
 
 .d-flex a {
     text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.d-flex a:hover {
+    background-color: rgb(207, 205, 205);
 }
 
 .dashboard-menu {
@@ -52,3 +60,15 @@ i {
     outline: none;
     border-bottom: 2px solid royalblue;
 }
+
+@media only screen and(max-width: 600px) {
+    .dash-menu .icons i {
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .search-bar input {
+        max-width: 40px;
+    }
+}
+
+.col-sm-3 {}
