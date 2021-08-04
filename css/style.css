@@ -71,4 +71,25 @@ i {
     }
 }
 
-.col-sm-3 {}
+.crop-form form label {
+    font-size: 16px;
+}
+
+.crop-form form input {
+    border: 2px solid green;
+    border-radius: 5px;
+    color: green;
+}
+
+.crop-form form button {
+    background-color: green;
+    transition: all linear 0.3s;
+    color: #fff;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.crop-form form button:hover {
+    background-color: #eee;
+    color: #000;
+}
