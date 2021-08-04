@@ -93,3 +93,7 @@ i {
     background-color: #eee;
     color: #000;
 }
+
+.dashboard-menu a {
+    text-decoration: none;
+}
