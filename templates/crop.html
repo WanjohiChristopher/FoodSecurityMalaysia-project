@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/all.min.css">
-    <link rel="stylesheet" href="./static/css/bootstrap.css">
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="../static/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Omdena Project</title>
 </head>
 
@@ -18,13 +18,13 @@
             <div class="col-sm-3 shadow">
 
                 <div class="dashboard-menu mt-2">
-                    <a href="./index.html" style="text-decoration: none;">
+                    <a href="{{url_for('home')}}" style="text-decoration: none;">
                         <li><i class="fas fa-bars"></i>Dashboard</li>
                     </a>
                 </div>
                 <div class="d-flex">
-                    <a href="./crop.html">
-                        <li> <i class="fas fa-user"></i>User Profile</li>
+                    <a href="{{url_for('crop_yield')}}">
+                        <li> <i class="fas fa-user"></i>Crop Yield</li>
                     </a>
                 </div>
                 <div class="d-flex">
@@ -84,48 +84,40 @@
                                 <div class="col-sm-6 shadow pt-5 pb-4">
                                     <h1 class="text-center">Crop Yield Prediction</h1>
                                     <hr>
-                                    <form action="" method="get">
-                                        <div class="form-group ">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
+                                    <form action="{{url_for('predict')}}" method="post">
+
+                                        <div class="form-group mt-2">
+                                            <label for="">Precipitation</label>
+                                            <input type="text" name='Precipitation' required class="form-control">
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
+                                            <label for="">Year</label>
+                                            <input type="text" name='Year' required autocomplete="off" class="form-control">
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
+                                            <label for="">Temperature</label>
+                                            <input type="text" name='Temperature' required class="form-control">
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
+                                            <label for="">Humidity</label>
+                                            <input type="text" name='Humidity' required class="form-control">
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
+                                            <label for="">Crop</label>
+                                            <input type="text" name='Crop' class="form-control">
                                         </div>
-                                        <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <label for="">Prediction</label>
-                                            <input type="text" class="form-control">
-                                        </div>
+
                                         <div class="form-group mt-2">
 
-                                            <button class="btn btn-lg">Submit</button>
+                                            <button class="btn btn-lg">Predict</button>
                                         </div>
                                     </form>
+                                    <br />
+                                    <b> <span style="color: black "> {{pred}} </span></b>
                                 </div>
-                                <div class="col-sm-6">
-                                    <img src="./images/sidebar-1.jpg" alt="">
-                                </div>
+                                <div class="col-sm-6 shadow pt-5 pb-4">
+                                    <img src="../static/images/rices.jpg" style="width: 700px; height: 900px;" alt=""></div>
+
                             </div>
                         </div>
                     </div>
@@ -135,11 +127,18 @@
     </div>
 
 
+    <footer>
+        <center>
+            <p>&copysr;Cursorhub Technologies Ltd &copy; 2021 All Right Reserved</p>
+        </center>
 
+    </footer>
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.js"></script>
 </body>
+
+</html>
 
 </html>
