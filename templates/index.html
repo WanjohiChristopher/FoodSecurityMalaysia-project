@@ -10,94 +10,119 @@
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/style.css">
     <title>Omdena Project</title>
-    <div class="dashboard">
-        <div class="row">
-            <div class="col-sm-3 shadow">
+</head>
+<div class="dashboard">
+    <div class="row">
+        <div class="col-sm-3 shadow">
 
-                <div class="dashboard-menu mt-2">
-                    <a href="{{url_for('home')}}">
-                        <li><i class="fas fa-bars"></i>Dashboard</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="{{url_for('crop_yield')}}">
-                        <li> <i class="fas fa-user"></i>Crop Yield</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="">
-                        <li><i class="fab fa-leanpub"></i>Topograph</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="">
-                        <li> <i class="fas fa-icons"></i>Icons</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="">
-                        <li> <i class="fas fa-map-marker-alt"></i>Maps</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="">
-                        <li><i class="fas fa-bell"></i>Notification</li>
-                    </a>
-                </div>
-                <div class="d-flex">
-                    <a href="">
-                        <li><i class="fab fa-aws"></i>RTL Support</li>
-                    </a>
-                </div>
-                <div class="d-flex ls-list">
-                    <a href="">
-                        <li> <i class="fas fa-download"></i>Upgrade To Pro</li>
-                    </a>
-                </div>
+            <div class="dashboard-menu mt-2">
+                <a href="{{url_for('home')}}">
+                    <li><i class="fas fa-bars"></i>Dashboard</li>
+                </a>
             </div>
-            <div class="col-sm-9">
-                <div class="dash-menu">
-                    <div class="container">
-                        <div class="d-flex mt-3">
-                            <div class="title" style="color: rgb(8, 10, 8);">
-                                <b>
-                                <h4 class="mt-">Dashboard Improving Food Security and Crop Yield in Malysia</h4>
+            <div class="d-flex">
+                <a href="{{url_for('crop_yield')}}">
+                    <li> <i class="fas fa-user"></i>Crop Yield</li>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="">
+                    <li><i class="fab fa-leanpub"></i>Climate Risk</li>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="">
+                    <li> <i class="fas fa-icons"></i>Crop Disease Detection</li>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="{{url_for('detection')}}">
+                    <li><i class="fab fa-aws"></i>Crop Detection</li>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="">
+                    <li> <i class="fas fa-map-marker-alt"></i>Maps</li>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="">
+                    <li><i class="fas fa-bell"></i>Notification</li>
+                </a>
+            </div>
+
+            <div class="d-flex ls-list">
+                <a href="">
+                    <li> <i class="fas fa-download"></i>Premiums</li>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="dash-menu">
+                <div class="container">
+                    <div class="d-flex mt-3">
+                        <div class="title" style="color: rgb(8, 10, 8);">
+                            <b>
+                                <h4 class="mt-" style="color: green;font-weight: 800;">Dashboard Improving Food Security and Crop Yield in Malysia</h4>
                             </b>
-                            </div>
-                            <div class="ml-auto">
-                                <div class="d-flex">
-                                    <div class="search-bar">
-                                        <input type="search" placeholder="search">
-                                    </div>
-                                    <div class="icons mt-2">
-                                        <i class="fas fa-bars"></i>
-                                        <i class="fas fa-bell"></i>
-                                        <i class="fas fa-user"></i>
-                                    </div>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="d-flex">
+                                <div class="search-bar">
+                                    <input type="search" placeholder="search">
+                                </div>
+                                <div class="icons mt-2">
+                                    <i class="fas fa-bars"></i>
+                                    <i class="fas fa-bell"></i>
+                                    <i class="fas fa-user"></i>
                                 </div>
                             </div>
-
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="dash-boardanalysis">
+                <div class='row'>
+                    <div class="col-sm-6">
+                        <img src="../static/images/Temperature.png" class="img-fluid" style="height: 400px; width: 100%;" alt="">
                     </div>
                     <div class="col-sm-6 ">
-                        <img src="../static/images/MalaysiaPalmOutput.png" style="width: 700px; height: 500px;" alt=""></div>
-
+                        <img src="../static/images/Crop.png" class="img-fluid" style="height: 400px; width: 100%;" alt="">
+                    </div>
+                </div>
+                <div class="row pr-2">
+                    <div class="col-sm-6 ">
+                        <img src="../static/images/Rainfall.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-6 ">
+                        <img src="../static/images/Precipitation.png" class="img-fluid" alt=" ">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
-    </div>
-    <footer>
-        <center>
-            <p>&copysr;Cursorhub Technologies Ltd &copy; 2021 All Right Reserved</p>
-        </center>
 
-    </footer>
+</div>
+</div>
 
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    </body>
+</div>
+</div>
+</div>
+</div>
+<footer>
+
+    <p class="text-center ">&copysr;Cursorhub Technologies Ltd &copy; 2021 All Right Reserved</p>
+
+</footer>
+
+
+<script src="./js/jquery.min.js "></script>
+<script src="./js/bootstrap.min.js "></script>
+<script src="./js/bootstrap.js "></script>
+</body>
 
 </html>

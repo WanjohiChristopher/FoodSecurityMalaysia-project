@@ -64,8 +64,8 @@
                     <div class="container">
                         <div class="d-flex mt-3">
                             <div class="title">
-                                <h3 class="mt-" style="font-weight: 600; color: blue;">
-                                    <marquee>CROP YIELD PREDICTION</marquee>
+                                <h3 class="mt-" style="font-weight: 600; color: #5eff00;">
+                                    <marquee>CROP DETECTION</marquee>
                                 </h3>
                             </div>
                             <div class="ml-auto">
@@ -85,40 +85,55 @@
                             <div class="row">
                                 <div class="col-sm-6 shadow pt-5 pb-4">
 
-                                    <h1 class="text-center">Crop Yield Prediction</h1>
+                                    <h1 class="text-center">Crop Detection</h1>
                                     <hr>
-                                    <form action="{{url_for('predict')}}" method="post">
+                                    <form action="{{url_for('cropdetection')}}" method="post">
 
                                         <div class="form-group mt-2 ">
-                                            <label for=" ">Precipitation in (Mm)</label>
-                                            <input type="text " name='Precipitation' required class="form-control ">
+                                            <label for=" ">B1 Value</label>
+                                            <input type="text " name='B1' required class="form-control ">
                                         </div>
                                         <div class="form-group mt-2 ">
-                                            <label for=" ">Rainfall (Mm)</label>
-                                            <input type="text " name='rainfall' required class="form-control ">
+                                            <label for=" ">B10 Value</label>
+                                            <input type="text " name='B10' required class="form-control ">
                                         </div>
                                         <div class="form-group mt-2 ">
-                                            <label for=" ">Temperature(Degree Celcius)</label>
+                                            <label for=" ">B11 Value</label>
                                             <input type="text " name='Temperature' required class="form-control ">
                                         </div>
                                         <div class="form-group mt-2 ">
-                                            <label for=" ">Humidity(g/kg)</label>
-                                            <input type="text " name='Humidity' required class="form-control ">
+                                            <label for=" ">B2 Value</label>
+                                            <input type="text " name='B2' required class="form-control ">
                                         </div>
                                         <div class="form-group mt-2 ">
-                                            <label for=" ">Crop{cocoa:0,Oilpalm:1,Paddy:2,Rubber:3}</label>
-                                            <input type="text " name='Crop' class="form-control ">
+                                            <label for=" ">B3 Value</label>
+                                            <input type="text " name='B3' class="form-control ">
                                         </div>
-
+                                        <div class="form-group mt-2 ">
+                                            <label for=" ">B4 Value</label>
+                                            <input type="text " name='B4' class="form-control ">
+                                        </div>
+                                        <div class="form-group mt-2 ">
+                                            <label for=" ">B5 Value</label>
+                                            <input type="text " name='B5' class="form-control ">
+                                        </div>
+                                        <div class="form-group mt-2 ">
+                                            <label for=" ">B6 Value</label>
+                                            <input type="text " name='B6' class="form-control ">
+                                        </div>
+                                        <div class="form-group mt-2 ">
+                                            <label for=" ">B7 Value</label>
+                                            <input type="text " name='B7' class="form-control ">
+                                        </div>
                                         <div class="form-group mt-2">
                                             <button class="btn btn-lg">Predict</button>
                                         </div>
                                     </form>
                                     <br />
-                                    <b> <span style="color: black "> {{pred}} </span></b>
+                                    <b> <span style="color: black "> {{preds}} </span></b>
                                 </div>
                                 <div class="col-sm-6 shadow pt-5 pb-4 ">
-                                    <img src="../static/images/rices.jpg " style="width: 700px; height: 900px; " alt=" ">
+                                    <img src="../static/images/food-crop.jpg " style="width: 700px; height: 900px; " alt=" ">
                                 </div>
 
                             </div>
