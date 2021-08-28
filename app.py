@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 #from flask import Flask, render_template, request
 import pickle
 import numpy as np
-import ipywidgets as widgets
+#import ipywidgets as widgets
 from IPython.display import display
 import cv2
 import pickle
-import ipywidgets as AppLayout
+#import ipywidgets as AppLayout
 import ee
 import geemap
 
