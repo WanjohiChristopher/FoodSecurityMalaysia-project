@@ -4,11 +4,11 @@ import pickle
 import numpy as np
 #import ipywidgets as widgets
 from IPython.display import display
-import cv2
+#import cv2
 import pickle
 #import ipywidgets as AppLayout
-import ee
-import geemap
+#import ee
+#import geemap
 
 application = Flask(__name__)
 model = pickle.load(open('regressor.pkl', 'rb'))
