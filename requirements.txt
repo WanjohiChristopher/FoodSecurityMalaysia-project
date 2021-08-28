@@ -1,9 +1,7 @@
 absl-py==0.13.0
 alabaster==0.7.12
 altair==4.1.0
-anaconda-client==1.7.2
-anaconda-navigator==1.10.0
-anaconda-project==0.8.3
+
 anyio==3.2.1
 appdirs==1.4.4
 argh==0.26.2
@@ -133,16 +131,7 @@ Jinja2==2.11.2
 joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
 json5==0.9.5
 jsonschema @ file:///tmp/build/80754af9/jsonschema_1602607155483/work
-jupyter==1.0.0
-jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1601311786391/work
-jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1598884538475/work
-jupyter-core==4.6.3
-jupyter-server==1.9.0
-jupyter-ui-poll==0.1.2
-jupyterlab==2.2.6
-jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
-jupyterlab-server @ file:///tmp/build/80754af9/jupyterlab_server_1594164409481/work
-jupyterlab-widgets==1.0.0
+
 Keras-Applications==1.0.8
 keras-nightly==2.5.0.dev2021032900
 Keras-Preprocessing==1.1.2
